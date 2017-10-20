@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS warehousing.persons;
+CREATE TABLE `persons` (
+  `FIRST_NAME` varchar(50) DEFAULT NULL,
+  `LAST_NAME` varchar(45) DEFAULT NULL,
+  `EMAIL` varchar(45) DEFAULT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
