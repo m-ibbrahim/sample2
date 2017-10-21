@@ -106,23 +106,4 @@ public class Util
 
     return sb.toString();
   }
-
-  public static void main(String args[])
-  {
-    System.out.println("Hello world..");
-    Util obj = new Util();
-    try
-    {
-      List<String[]> rows = obj.readCsv();
-      for (String[] row : rows)
-      {
-        System.out.println("  - " + row[0] + row[1] + row[2] + row[3]);
-      }
-    }
-    catch (Exception e)
-    {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-    }
-  }
 }

@@ -1,4 +1,4 @@
-package com.bloomberg.inventory.service;
+package com.bloomberg.inventory.service.impl;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bloomberg.inventory.dao.DealDao;
 import com.bloomberg.inventory.jpa.Deal;
+import com.bloomberg.inventory.service.DealService;
 
 @Service
 public class DealServiceImpl implements DealService
