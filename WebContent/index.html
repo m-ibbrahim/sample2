@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>BLOOMBERG</title>
+<title>bloomberg</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -98,16 +98,6 @@
 								class="b1">m</span><span class="b1">b</span><span class="b1">e</span><span
 								class="b1">r</span><span class="b1">g</span></a>
 						</div>
-						<!-- //LOGO -->
-
-						<!-- SEARCH FORM -->
-						<!--div id="search-form" class="pull-right">
-						<form method="get" action="#">
-							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
-						</form>
-					</div-->
-						<!-- SEARCH FORM -->
-
 						<!-- MENU -->
 						<div class="pull-right">
 							<nav class="navmenu center">
@@ -119,8 +109,6 @@
 										<ul>
 											<li><a href="#uploadDeal">Upload Deal</a></li>
 											<li><a href="#viewDeals">View Deals</a></li>
-											<!-- li><a href="#projects">Technology Consulting</a></li>
-											<li><a href="#projects">Managed Services</a></li-->
 										</ul></li>
 								</ul>
 							</nav>
@@ -188,138 +176,21 @@
 
 			<!-- PROJECTS -->
 			<section id="uploadDeal" class="padbot20">
-				<!-- CONTAINER -->
 				<div class="container">
+					
 					<h2>
 						<b>Upload</b> Deal
 					</h2>
-				</div>
-				<!-- //CONTAINER -->
-				<div class="projects-wrapper" data-appear-top-offset="-200"
-					data-animated="fadeInUp">
-					<!-- PROJECTS SLIDER -->
-					<div class="owl-demo owl-carousel projects_slider">
-
-						<!-- work1 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/1.jpg" alt="" /> <a class="zoom"
-										href="images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //work1 -->
-						<!-- work2 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/2.jpg" alt="" /> <a class="zoom"
-										href="images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //work2 -->
-
-						<!-- work3 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/3.jpg" alt="" /> <a class="zoom"
-										href="images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //work3 -->
-
-						<!-- work4 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/4.jpg" alt="" /> <a class="zoom"
-										href="images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //work4 -->
-
-						<!-- work5 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/5.jpg" alt="" /> <a class="zoom"
-										href="images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //work5 -->
-
-						<!-- work6 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/6.jpg" alt="" /> <a class="zoom"
-										href="images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //work6 -->
-
-						<!-- work7 -->
-						<div class="item">
-							<div class="work_item">
-								<div class="work_img">
-									<img src="images/works/7.jpg" alt="" /> <a class="zoom"
-										href="images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
-								</div>
-								<div class="work_description">
-									<div class="work_descr_cont">
-										<a href="portfolio-post.html">Ginger Beast</a> <span>17
-											March, 2041</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<br/><br/><br/><br/>
+					<form action="UploadServlet" method="post"
+						enctype="multipart/form-data">
+						<input type="file" name="file" size="50" /> <br /> <input
+							type="submit" value="Upload" />
+					</form>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 				</div>
 			</section>
-			
+
 			<section id="viewDeals" class="padbot20">
 				<!-- CONTAINER -->
 				<div class="container">
