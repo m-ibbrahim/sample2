@@ -15,19 +15,20 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class AppConfig
 {
 
-
   @Bean
-  public LocalEntityManagerFactoryBean geEntityManagerFactoryBean() {
-     LocalEntityManagerFactoryBean factoryBean = new LocalEntityManagerFactoryBean();
-     factoryBean.setPersistenceUnitName("LOCAL_PERSISTENCE");
-     return factoryBean;
+  public LocalEntityManagerFactoryBean geEntityManagerFactoryBean()
+  {
+    LocalEntityManagerFactoryBean factoryBean = new LocalEntityManagerFactoryBean();
+    factoryBean.setPersistenceUnitName("LOCAL_PERSISTENCE");
+    return factoryBean;
   }
 
   @Bean
-  public JpaTransactionManager geJpaTransactionManager() {
-     JpaTransactionManager transactionManager = new JpaTransactionManager();
-     transactionManager.setEntityManagerFactory(geEntityManagerFactoryBean().getObject());
-     return transactionManager;
+  public JpaTransactionManager geJpaTransactionManager()
+  {
+    JpaTransactionManager transactionManager = new JpaTransactionManager();
+    transactionManager.setEntityManagerFactory(geEntityManagerFactoryBean().getObject());
+    return transactionManager;
   }
-  
+
 }
