@@ -1,8 +1,8 @@
-package com.inventory.dao;
+package com.bloomberg.inventory.dao;
 
 import java.util.List;
 
-import com.inventory.jpa.Person;
+import com.bloomberg.inventory.jpa.Person;
 
 public interface PersonDao
 {

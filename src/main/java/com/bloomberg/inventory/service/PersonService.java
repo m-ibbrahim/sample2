@@ -1,8 +1,8 @@
-package com.inventory.service;
+package com.bloomberg.inventory.service;
 
 import java.util.List;
 
-import com.inventory.jpa.Person;
+import com.bloomberg.inventory.jpa.Person;
 
 public interface PersonService
 {

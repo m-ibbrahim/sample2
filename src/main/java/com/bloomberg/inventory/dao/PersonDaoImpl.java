@@ -1,4 +1,4 @@
-package com.inventory.dao;
+package com.bloomberg.inventory.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import javax.persistence.criteria.Root;
 
 import org.springframework.stereotype.Repository;
 
-import com.inventory.jpa.Person;
+import com.bloomberg.inventory.jpa.Person;
 
 @Repository
 public class PersonDaoImpl implements PersonDao

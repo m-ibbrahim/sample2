@@ -1,4 +1,4 @@
-package com.inventory.jpa;
+package com.bloomberg.inventory.jpa;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
