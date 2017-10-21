@@ -7,6 +7,8 @@ import com.bloomberg.inventory.jpa.Deal;
 public interface DealDao
 {
   void add(Deal deal);
+  
+  void remove(Deal deal);
 
   List<Deal> listDeals();
 }

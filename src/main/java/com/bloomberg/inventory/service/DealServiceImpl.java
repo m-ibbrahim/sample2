@@ -23,6 +23,13 @@ public class DealServiceImpl implements DealService
     dealDao.add(person);
   }
 
+  @Transactional
+  @Override
+  public void remove(Deal person)
+  {
+    dealDao.remove(person);
+  }
+
   @Transactional(readOnly = true)
   @Override
   public List<Deal> listDeals()

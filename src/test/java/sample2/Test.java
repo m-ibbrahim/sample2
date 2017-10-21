@@ -52,14 +52,44 @@ public class Test
 
     Util util = new Util();
     DealService dealService = context.getBean(DealService.class);
+
     try
     {
       List<String[]> rows = util.readCsv();
       for (String[] row : rows)
       {
         System.out.println("  - " + row[0] + row[1] + row[2] + row[3]);
+        dealService.remove(new Deal(row[0], row[1], row[2], row[3], row[4], null));
+      }
+    }
+    catch (Exception e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+
+    try
+    {
+      long start = System.currentTimeMillis();
+      System.out.println("------------------------------------------------------------------");
+      System.out.println("                  DATA LOADING IS STARTING NOW");
+      System.out.println("------------------------------------------------------------------");
+      // System.out.println(" - Extract-Load the data from " +
+      // this.dataFileName);
+
+      List<String[]> rows = util.readCsv();
+      for (String[] row : rows)
+      {
+        System.out.println("  - " + row[0] + row[1] + row[2] + row[3]);
         dealService.add(new Deal(row[0], row[1], row[2], row[3], row[4], null));
       }
+
+      long end = System.currentTimeMillis();
+      System.out.println("------------------------------------------------------------------");
+      System.out.println("                  DATA LOADING ENDING NOW");
+      System.out.println("------------------------------------------------------------------");
+      String totalTime = Util.toFriendlyDuration(end - start);
+      System.out.println("Time taken to read, parse the CSV file: " + totalTime);
     }
     catch (Exception e)
     {

@@ -33,4 +33,11 @@ public class DealDaoImpl implements DealDao
     return em.createQuery(criteriaQuery).getResultList();
   }
 
+  @Override
+  public void remove(Deal person)
+  {
+//    em.remove(person);
+    em.remove(em.contains(person) ? person : em.merge(person));
+  }
+
 }

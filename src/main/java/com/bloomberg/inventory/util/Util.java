@@ -22,19 +22,7 @@ public class Util
 
   public List<String[]> readCsv() throws Exception
   {
-
-    long start = System.currentTimeMillis();
-    System.out.println("------------------------------------------------------------------");
-    System.out.println("                  DATA LOADING IS STARTING NOW");
-    System.out.println("------------------------------------------------------------------");
-    System.out.println(" - Extract-Load the data from " + this.dataFileName);
     List<String[]> rows = parseDataFile();
-    long end = System.currentTimeMillis();
-    System.out.println("------------------------------------------------------------------");
-    System.out.println("                  DATA LOADING ENDING NOW");
-    System.out.println("------------------------------------------------------------------");
-    String totalTime = toFriendlyDuration(end - start);
-    System.out.println("Time taken to read, parse the CSV file: " + totalTime);
     return rows;
   }
 
@@ -52,7 +40,7 @@ public class Util
         // Ignore the lines which start with #
         processedInput = rawInput.stream().filter(l -> !l.startsWith("#")).map(a -> a.split(","))
             .filter(i -> !StringUtils.isBlank(i[0]) && !StringUtils.isBlank(i[1]) && !StringUtils.isBlank(i[2])).collect(toList());
-        System.out.println(processedInput);
+        // System.out.println(processedInput);
       }
       catch (Throwable t)
       {
@@ -128,7 +116,7 @@ public class Util
       List<String[]> rows = obj.readCsv();
       for (String[] row : rows)
       {
-        System.out.println("  - " + row[0] + row[1] + row [2] + row [3]);
+        System.out.println("  - " + row[0] + row[1] + row[2] + row[3]);
       }
     }
     catch (Exception e)
