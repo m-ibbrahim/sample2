@@ -10,8 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScans(value = { @ComponentScan("com.bloomberg.inventory.dao"),
-    @ComponentScan("com.bloomberg.inventory.service") })
+@ComponentScans(value = { @ComponentScan("com.bloomberg.inventory.dao"), @ComponentScan("com.bloomberg.inventory.service") })
 public class AppConfig
 {
 
