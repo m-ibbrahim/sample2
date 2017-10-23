@@ -13,7 +13,7 @@
 
 	<servlet-mapping>
 		<servlet-name>sample2</servlet-name>
-		<url-pattern>*.htm</url-pattern>
+		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
 
