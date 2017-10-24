@@ -20,7 +20,7 @@ import com.bloomberg.inventory.util.Util;
  * 
  *
  */
-public class DealController implements Controller
+public class AddDealController implements Controller
 {
 
   /**
@@ -90,7 +90,7 @@ public class DealController implements Controller
     }
 
     context.close();
-    return new ModelAndView("index.html");
+    return new ModelAndView("jsp/addDeal.jsp");
   }
 
 }

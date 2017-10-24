@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-  <!-- the application context definition for the springapp DispatcherServlet -->
+	<!-- the application context definition for the springapp DispatcherServlet -->
 
-  <bean name="/hello.do" class="com.bloomberg.inventory.controller.DealController"/>
+	<bean name="/login.do" class="com.bloomberg.inventory.controller.LoginController" />
+
+	<bean name="/addDeal.do" class="com.bloomberg.inventory.controller.AddDealController" />
+
+	<bean name="/viewDeal.do" class="com.bloomberg.inventory.controller.ViewDealController" />
 
 </beans>
