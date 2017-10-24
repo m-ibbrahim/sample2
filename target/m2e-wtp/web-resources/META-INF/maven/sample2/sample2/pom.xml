@@ -12,6 +12,11 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- These are the dependencies for SPRING + HIBERNATE +JDK 8 INTEGRATION -->
+		
+		<!-- =================== SPRING DEPENDENCIES =================== -->
+		<!-- Spring mvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -23,27 +28,25 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
+		<!-- Spring expression -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
 			<version>5.0.0.RELEASE</version>
 		</dependency>
-
+		<!-- Spring core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>4.3.6.RELEASE</version>
 		</dependency>
-		
-		
+		<!-- Spring beans -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
 			<version>4.3.6.RELEASE</version>
 		</dependency>
-				
-		<!-- Spring Context -->
+		<!-- Spring context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -55,7 +58,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- Spring ORM -->
+		<!-- Spring orm -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
@@ -67,35 +70,43 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- Mysql Connector -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>6.0.5</version>
-		</dependency>
+
+		<!-- =================== HIBERNATE DEPENDENCIES =================== -->
 		<!-- Hibernate 5.2.9 Final -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.2.9.Final</version>
 		</dependency>
+
+		<!-- =================== MYSQL DEPENDENCIES     =================== -->
+		<!-- Mysql Connector -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>6.0.5</version>
+		</dependency>
+		
+		<!-- =================== MISC DEPENDENCIES     =================== -->
 		<!-- Apache Commons DBCP -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-dbcp2</artifactId>
 			<version>2.1.1</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+		<!-- Javassist -->
 		<dependency>
 			<groupId>org.javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>3.22.0-GA</version>
 		</dependency>
+		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.16.14</version>
 		</dependency>
+		<!-- Commons-lang3 -->		
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>

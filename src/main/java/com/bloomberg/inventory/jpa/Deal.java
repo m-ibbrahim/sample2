@@ -8,6 +8,10 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * 
+ *
+ */
 @Entity
 @Table(name = "DEAL")
 @Getter
@@ -15,11 +19,22 @@ import lombok.Setter;
 public class Deal
 {
 
+  /**
+   * 
+   */
   public Deal()
   {
 
   }
 
+  /**
+   * @param dealUniqueId
+   * @param fromCurrencyIsoCode
+   * @param toCurrencyIsoCode
+   * @param dealTimestamp
+   * @param dealAmount
+   * @param dealFilename
+   */
   public Deal(String dealUniqueId, String fromCurrencyIsoCode, String toCurrencyIsoCode, String dealTimestamp, String dealAmount, String dealFilename)
   {
     super();

@@ -8,12 +8,19 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * 
+ *
+ */
 @Configuration
 @EnableTransactionManagement
 @ComponentScans(value = { @ComponentScan("com.bloomberg.inventory.dao"), @ComponentScan("com.bloomberg.inventory.service") })
 public class AppConfig
 {
 
+  /**
+   * @return
+   */
   @Bean
   public LocalEntityManagerFactoryBean geEntityManagerFactoryBean()
   {
@@ -22,6 +29,9 @@ public class AppConfig
     return factoryBean;
   }
 
+  /**
+   * @return
+   */
   @Bean
   public JpaTransactionManager geJpaTransactionManager()
   {

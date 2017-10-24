@@ -10,6 +10,10 @@ import com.bloomberg.inventory.dao.DealDao;
 import com.bloomberg.inventory.jpa.Deal;
 import com.bloomberg.inventory.service.DealService;
 
+/**
+ * 
+ *
+ */
 @Service
 public class DealServiceImpl implements DealService
 {
@@ -17,6 +21,13 @@ public class DealServiceImpl implements DealService
   @Autowired
   private DealDao dealDao;
 
+  /*
+   * (non-Javadoc)
+   * 
+   * @see
+   * com.bloomberg.inventory.service.DealService#add(com.bloomberg.inventory.jpa
+   * .Deal)
+   */
   @Transactional
   @Override
   public void add(Deal person)
@@ -24,6 +35,13 @@ public class DealServiceImpl implements DealService
     dealDao.add(person);
   }
 
+  /*
+   * (non-Javadoc)
+   * 
+   * @see
+   * com.bloomberg.inventory.service.DealService#remove(com.bloomberg.inventory.
+   * jpa.Deal)
+   */
   @Transactional
   @Override
   public void remove(Deal person)
@@ -31,6 +49,11 @@ public class DealServiceImpl implements DealService
     dealDao.remove(person);
   }
 
+  /*
+   * (non-Javadoc)
+   * 
+   * @see com.bloomberg.inventory.service.DealService#listDeals()
+   */
   @Transactional(readOnly = true)
   @Override
   public List<Deal> listDeals()

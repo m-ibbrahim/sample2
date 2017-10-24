@@ -6,9 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.bloomberg.inventory.config.AppConfig;
 import com.bloomberg.inventory.jpa.Deal;
-import com.bloomberg.inventory.jpa.Person;
 import com.bloomberg.inventory.service.DealService;
-import com.bloomberg.inventory.service.PersonService;
 import com.bloomberg.inventory.util.Util;
 
 public class Test
