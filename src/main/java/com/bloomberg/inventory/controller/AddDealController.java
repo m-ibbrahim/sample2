@@ -107,7 +107,7 @@ public class AddDealController implements Controller
     context.close();
 
     logger.info("   - Exit: AddDealController");
-    return new ModelAndView("jsp/addDeal.jsp");
+    return new ModelAndView("/viewDeal.do");
   }
 
   /**

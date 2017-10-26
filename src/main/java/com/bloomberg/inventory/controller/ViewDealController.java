@@ -31,7 +31,7 @@ public class ViewDealController implements Controller
   {
     logger.info(" - Enter: ViewDealController");
 
-    return new ModelAndView("/jsp/addDeal.jsp");
+    return new ModelAndView("/jsp/viewDeals.jsp");
   }
 
 }

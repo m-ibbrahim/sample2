@@ -104,8 +104,7 @@
 									<li class="scroll_btn"><a href="#about2">About Us 2</a></li-->
 									<li class="sub-menu"><a href="javascript:void(0);">Deals</a>
 										<ul>
-											<li><a href="#uploadDeal">Upload Deal</a></li>
-											<li><a href="#viewDeals">View Deals</a></li>
+											<li><a href="login.do#uploadDeal">Upload Deal</a></li>
 										</ul></li>
 									<li class="first active scroll_btn"><a href="index.html">Logout</a></li>
 								</ul>
@@ -118,38 +117,15 @@
 				<!-- //CONTAINER -->
 			</header>
 			<!-- //HEADER -->
-			<!-- HOME -->
-			<section id="home" class="padbot0">
-				<!-- TOP SLIDER -->
-				<div class="flexslider top_slider">
-					<ul class="slides">
-						<li class="slide1">
-							<div class="flex_caption1">
-								<p class="title1 captionDelay2 FromTop">Upload Deal</p>
-							</div> <!--a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a-->
-						<li class="slide2">
-							<div class="flex_caption1">
-								<p class="title1 captionDelay6 FromLeft">View Deals</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- //TOP SLIDER -->
-			</section>
-			<!-- //HOME -->
 			<br /><br />
 			<!-- PROJECTS -->
-			<section id="uploadDeal" class="padbot20">
+			<section id="viewDeals" class="padbot20">
 				<div class="container">
 					<h2>
-						<b>Upload</b> Deal
+						<b>View</b> Deals
 					</h2>
 					<br /> <br /> <br /> <br />
-					<form action="addDeal.do" method="post"
-						enctype="multipart/form-data">
-						<input type="file" name="file" size="50" /> <br /> <input
-							type="submit" value="Upload" />
-					</form>
+					
 					<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 					<br /> <br /> <br /> <br /> <br />
 				</div>

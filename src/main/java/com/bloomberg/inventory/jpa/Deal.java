@@ -9,7 +9,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 
+ * This is an entity class representing the DEAL table.
  *
  */
 @Entity
@@ -20,7 +20,7 @@ public class Deal
 {
 
   /**
-   * 
+   * Default constructor for this class
    */
   public Deal()
   {

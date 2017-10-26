@@ -25,5 +25,8 @@ public interface DealDao
    */
   List<Deal> listDeals();
 
+  /**
+   * @param deal
+   */
   void add(List<Deal> deal);
 }

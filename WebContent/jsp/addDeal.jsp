@@ -105,7 +105,6 @@
 									<li class="sub-menu"><a href="javascript:void(0);">Deals</a>
 										<ul>
 											<li><a href="#uploadDeal">Upload Deal</a></li>
-											<li><a href="#viewDeals">View Deals</a></li>
 										</ul></li>
 									<li class="first active scroll_btn"><a href="index.html">Logout</a></li>
 								</ul>

@@ -11,7 +11,7 @@ import com.bloomberg.inventory.jpa.Deal;
 import com.bloomberg.inventory.service.DealService;
 
 /**
- * 
+ * This is a implementation of the DealService Class.
  *
  */
 @Service
