@@ -69,7 +69,7 @@ public class Util
             .filter(i -> !StringUtils.isBlank(i[0]) && !StringUtils.isBlank(i[1]) && !StringUtils.isBlank(i[2]) && !StringUtils.isBlank(i[3]) && !StringUtils.isBlank(i[4])).collect(toList());
 
         invalidInputs = rawInput.stream().filter(l -> !l.startsWith("#")).map(a -> a.split(",")).filter(i -> StringUtils.isBlank(i[0]) || StringUtils.isBlank(i[1]) || StringUtils.isBlank(i[2])
-            || StringUtils.isBlank(i[3]) || StringUtils.isBlank(i[4]) || i[2].length() != 3 || i[3].length() != 3).collect(toList());
+            || StringUtils.isBlank(i[3]) || StringUtils.isBlank(i[4]) || i[1].length() != 3 || i[2].length() != 3).collect(toList());
 
       }
       catch (Throwable t)

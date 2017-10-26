@@ -14,7 +14,9 @@ import org.springframework.web.servlet.mvc.Controller;
 import com.bloomberg.inventory.config.AppConfig;
 import com.bloomberg.inventory.form.DealForm;
 import com.bloomberg.inventory.jpa.Deal;
+import com.bloomberg.inventory.jpa.InvalidDeal;
 import com.bloomberg.inventory.service.DealService;
+import com.bloomberg.inventory.service.InvalidDealService;
 import com.bloomberg.inventory.util.Util;
 
 /**
@@ -48,7 +50,10 @@ public class AddDealController implements Controller
     Util util = new Util(); // TODO: To instantiated using @Autowoired
 
     // List of valid deals to the written to the database:
-    List<Deal> deals = new ArrayList<Deal>();
+    List<Deal> arlDeals = new ArrayList<Deal>();
+
+    // List of valid deals to the written to the database:
+    List<InvalidDeal> arlInvalidDeals = new ArrayList<InvalidDeal>();
 
     // Create a context:
     AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -56,6 +61,9 @@ public class AddDealController implements Controller
     // Create an object of Service class:
     DealService dealService = context.getBean(DealService.class);
 
+    // Create an object of Service class:
+    InvalidDealService invalidDealService = context.getBean(InvalidDealService.class);
+    
     // Get the upload filename:
     String dataFileName = getUploadFileName();
 
@@ -84,11 +92,11 @@ public class AddDealController implements Controller
       for (String[] row : validDeals)
       {
         logger.debug(" - " + row[0] + row[1] + row[2] + row[3]);
-        deals.add(new Deal(row[0], row[1], row[2], row[3], row[4], dataFileName));
+        arlDeals.add(new Deal(row[0], row[1], row[2], row[3], row[4], dataFileName));
       }
 
       // Add the deals to the database in batches
-      dealService.add(deals);
+      dealService.add(arlDeals);
 
       long end = System.currentTimeMillis();
       logger.debug("    ------------------------------------------------------------------");
@@ -96,6 +104,15 @@ public class AddDealController implements Controller
       logger.debug("    ------------------------------------------------------------------");
       String totalTime = Util.toFriendlyDuration(end - start);
       logger.info("   - Time taken to read, parse the CSV file: " + totalTime);
+
+      for (String[] row : invalidDeals)
+      {
+        logger.debug(" - " + row[0] + row[1] + row[2] + row[3]);
+        arlInvalidDeals.add(new InvalidDeal(row[0], row[1], row[2], row[3], row[4], dataFileName));
+      }
+
+      // Add the Invalid deals to the database in batches
+      invalidDealService.add(arlInvalidDeals);
     }
     catch (Exception e)
     {

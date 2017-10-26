@@ -5,7 +5,7 @@ import java.util.List;
 import com.bloomberg.inventory.jpa.Deal;
 
 /**
- * 
+ * This is a service class for DEAL which exposes all the methods to be used by the controllers.
  *
  */
 public interface DealService
