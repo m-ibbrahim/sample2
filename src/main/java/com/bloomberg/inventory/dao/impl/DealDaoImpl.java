@@ -29,13 +29,35 @@ public class DealDaoImpl implements DealDao
   /*
    * (non-Javadoc)
    * 
-   * @see
-   * com.bloomberg.inventory.dao.DealDao#add(com.bloomberg.inventory.jpa.Deal)
+   * @see com.bloomberg.inventory.dao.DealDao#add(com.bloomberg.inventory.jpa.Deal)
    */
   @Override
   public void add(Deal person)
   {
     em.persist(person);
+  }
+
+  /*
+   * (non-Javadoc)
+   * 
+   * @see com.bloomberg.inventory.dao.DealDao#add(com.bloomberg.inventory.jpa.Deal)
+   */
+  @Override
+  public void add(List<Deal> deals)
+  {
+    int batchSize = 10000;
+    for (int i = 0; i < deals.size(); i++)
+    {
+      Deal deal = deals.get(i);
+      em.persist(deal);
+      if (i % batchSize == 0)
+      {
+        em.flush();
+        em.clear();
+      }
+    }
+    em.flush();
+    em.clear();
   }
 
   /*
@@ -55,9 +77,7 @@ public class DealDaoImpl implements DealDao
   /*
    * (non-Javadoc)
    * 
-   * @see
-   * com.bloomberg.inventory.dao.DealDao#remove(com.bloomberg.inventory.jpa.
-   * Deal)
+   * @see com.bloomberg.inventory.dao.DealDao#remove(com.bloomberg.inventory.jpa. Deal)
    */
   @Override
   public void remove(Deal person)

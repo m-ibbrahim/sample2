@@ -3,8 +3,7 @@ package com.bloomberg.inventory.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.apache.log4j.Logger;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
@@ -18,7 +17,7 @@ public class ViewDealController implements Controller
   /**
    * 
    */
-  protected final Log logger = LogFactory.getLog(getClass());
+  private static final Logger logger = Logger.getLogger(ViewDealController.class);
 
   /*
    * (non-Javadoc)

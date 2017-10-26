@@ -15,6 +15,8 @@ public interface DealService
    */
   void add(Deal deal);
 
+  void add(List<Deal> deals);
+
   /**
    * @param deal
    */
@@ -24,4 +26,5 @@ public interface DealService
    * @return
    */
   List<Deal> listDeals();
+
 }

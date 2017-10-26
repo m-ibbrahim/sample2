@@ -24,9 +24,7 @@ public class DealServiceImpl implements DealService
   /*
    * (non-Javadoc)
    * 
-   * @see
-   * com.bloomberg.inventory.service.DealService#add(com.bloomberg.inventory.jpa
-   * .Deal)
+   * @see com.bloomberg.inventory.service.DealService#add(com.bloomberg.inventory.jpa .Deal)
    */
   @Transactional
   @Override
@@ -38,9 +36,7 @@ public class DealServiceImpl implements DealService
   /*
    * (non-Javadoc)
    * 
-   * @see
-   * com.bloomberg.inventory.service.DealService#remove(com.bloomberg.inventory.
-   * jpa.Deal)
+   * @see com.bloomberg.inventory.service.DealService#remove(com.bloomberg.inventory. jpa.Deal)
    */
   @Transactional
   @Override
@@ -59,6 +55,14 @@ public class DealServiceImpl implements DealService
   public List<Deal> listDeals()
   {
     return dealDao.listDeals();
+  }
+
+  @Transactional
+  @Override
+  public void add(List<Deal> deals)
+  {
+    dealDao.add(deals);
+
   }
 
 }

@@ -14,7 +14,7 @@
 	<dependencies>
 
 		<!-- These are the dependencies for SPRING + HIBERNATE +JDK 8 INTEGRATION -->
-		
+
 		<!-- =================== SPRING DEPENDENCIES =================== -->
 		<!-- Spring mvc -->
 		<dependency>
@@ -79,15 +79,15 @@
 			<version>5.2.9.Final</version>
 		</dependency>
 
-		<!-- =================== MYSQL DEPENDENCIES     =================== -->
+		<!-- =================== MYSQL DEPENDENCIES =================== -->
 		<!-- Mysql Connector -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>6.0.5</version>
 		</dependency>
-		
-		<!-- =================== MISC DEPENDENCIES     =================== -->
+
+		<!-- =================== MISC DEPENDENCIES =================== -->
 		<!-- Apache Commons DBCP -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -106,11 +106,28 @@
 			<artifactId>lombok</artifactId>
 			<version>1.16.14</version>
 		</dependency>
-		<!-- Commons-lang3 -->		
+		<!-- Commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.6</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
 		</dependency>
 	</dependencies>
 

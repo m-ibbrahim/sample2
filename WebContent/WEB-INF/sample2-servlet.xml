@@ -13,4 +13,7 @@
 
 	<bean name="/viewDeal.do" class="com.bloomberg.inventory.controller.ViewDealController" />
 
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
 </beans>
