@@ -12,6 +12,6 @@ public class ViewDealControllerTest extends TestCase
   {
     ViewDealController controller = new ViewDealController();
     ModelAndView modelAndView = controller.handleRequest(null, null);
-    assertEquals("/jsp/addDeal.jsp", modelAndView.getViewName());
+    assertEquals("/jsp/viewDeals.jsp", modelAndView.getViewName());
   }
 }

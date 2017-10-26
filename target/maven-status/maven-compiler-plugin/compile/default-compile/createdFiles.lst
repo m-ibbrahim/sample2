@@ -1,0 +1,16 @@
+com\bloomberg\inventory\jpa\InvalidDeal.class
+com\bloomberg\inventory\config\AppConfig.class
+com\bloomberg\inventory\form\DealForm.class
+com\bloomberg\inventory\dao\InvalidDealDao.class
+com\bloomberg\inventory\service\InvalidDealService.class
+com\bloomberg\inventory\service\DealService.class
+com\bloomberg\inventory\util\Util.class
+com\bloomberg\inventory\dao\impl\DealDaoImpl.class
+com\bloomberg\inventory\controller\LoginController.class
+com\bloomberg\inventory\service\impl\InvalidDealServiceImpl.class
+com\bloomberg\inventory\controller\AddDealController.class
+com\bloomberg\inventory\dao\DealDao.class
+com\bloomberg\inventory\dao\impl\InvalidDealDaoImpl.class
+com\bloomberg\inventory\service\impl\DealServiceImpl.class
+com\bloomberg\inventory\jpa\Deal.class
+com\bloomberg\inventory\controller\ViewDealController.class

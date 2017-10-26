@@ -13,6 +13,6 @@ public class AddDealControllerTest extends TestCase
   {
     AddDealController controller = new AddDealController();
     ModelAndView modelAndView = controller.handleRequest(null, null);
-    assertEquals("jsp/addDeal.jsp", modelAndView.getViewName());
+    assertEquals("/viewDeal.do", modelAndView.getViewName());
   }
 }
